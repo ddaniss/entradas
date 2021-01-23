@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #beb497;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  width: 40%;
+  margin: 0 auto;
+}
+
+.logo,
+.logo:visited {
+  font-size: 28px;
+  color: #000;
+  font-weight: 800;
+  font-family: Merriweather, serif;
+}
+
+.autorCard p {
+  color: rgb(66, 66, 66);
+}
+
+.autorCard span {
+  color: rgb(26, 26, 26);
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #181818;
+
+  position: relative;
+}
+
+.loginLink:hover::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  width: 100%;
+  height: 3px;
+  background-color: #181818;
+  border: none;
+}
+
+hr {
+  width: 30%;
+  margin: 3.5em auto;
+  background-color: #181818;
+  border: none;
+  height: 5px;
+  border-radius: 2px;
+}
+
+img {
+  width: 50%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3em;
+  margin-top: 3em;
+  margin-bottom: 9em;
+}
+
+.titulo {
+  font-size: 58px;
+}
+
+.resumen {
+  margin-top: 2em;
+  color: rgb(73, 73, 73);
+
+  font-size: 24px;
+  text-align: justify;
+}
+
+img {
+  width: 100%;
+  margin: 1em auto;
+}
+
+.contenido {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.7em;
+  letter-spacing: 1px;
+}
+
+.entradaCard,
+.entradaCard:visited {
+  height: 250px;
+  width: 100%;
+  margin-top: 0.5em;
+
+  background-size: cover;
+  transition: all 1s;
+
+  padding: 1em;
+
+  display: flex;
+  align-items: end;
+
+  text-decoration: none;
+  color: #fff;
+  overflow: hidden;
+}
+
+.entradaCard img {
+  z-index: -1;
+  position: absolute;
+  top: -16px;
+  left: 0;
+  height: auto;
+}
+
+.entrada__title {
+  z-index: 999;
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+}
+
+.entradaCard:hover {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(245, 246, 252, 0.267),
+    rgba(0, 0, 0, 0.349)
+  );
+}
+
+.comentarioContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.coment {
+  margin: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.comentariosTitulo {
+  margin: 1em 0;
+}
+
+.seccionComentarios {
+  margin: 1em 0;
+  margin-bottom: 4em;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.comentarioTexto {
+  padding: 1em;
+  background-color: #575245;
+  color: #eee;
+  margin-left: 3em;
+  width: 100%;
+}
+
+.comentarLink {
+  font-size: 24px;
+  margin: 0 auto;
+  margin-top: 2em;
+  position: relative;
+}
+
+.comentarLink:hover::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  height: 3px;
+  background-color: #181818;
+  border: none;
+}
+
+footer {
+  background-color: rgb(190, 180, 151);
+
+  text-align: center;
+  padding: 2em;
+  margin-top: 3em;
+}

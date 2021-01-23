@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Merriweather, serif;
+}
+
+body {
+  background-color: rgb(190, 180, 151);
+}
+
+header {
+  /* display: flex;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 0 3em;
+  margin-top: 3em;
+  margin-bottom: 8em;
+  height: 83px;
+}
+
+.logo,
+.logo:visited {
+  font-size: 28px;
+  color: #000;
+  font-weight: 800;
+}
+
+.nav {
+  display: flex;
+  list-style-type: none;
+
+  justify-content: center;
+
+  font-size: 20px;
+
+  margin-left: 4.5em;
+}
+
+.sesion {
+  border-left: 3px solid #181818;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  width: 213px;
+  padding: 0.5em 1em;
+  font-size: 18px;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #181818;
+
+  position: relative;
+}
+
+.nav a:hover::before,
+.loginLink:hover::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  width: 100%;
+  height: 3px;
+  background-color: #181818;
+  border: none;
+}
+
+.loginCorto:hover::before {
+  width: 69%;
+}
+.loginCorto1:hover::before {
+  width: 31%;
+}
+
+.nav__item + .nav__item {
+  margin-left: 1.5em;
+}
+
+.entradaGallery {
+  /* display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 55%;
+  min-height: 64.6vh;
+  margin: 0 auto;
+}
+
+.entradaCard,
+.entradaCard:visited {
+  height: 250px;
+  background-size: cover;
+
+  width: 48%;
+  margin-bottom: 2%;
+
+  padding: 1em;
+
+  display: flex;
+  align-items: end;
+
+  text-decoration: none;
+  color: #f0f0f0;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.entradaCard:nth-child(3n) {
+  width: 100%;
+}
+
+.entradaCard img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+}
+
+.entrada__title {
+  z-index: 999;
+  position: absolute;
+  bottom: 5px;
+  left: 15px;
+}
+
+.entradaCard:hover {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(245, 246, 252, 0.267),
+    rgba(41, 41, 41, 0.493)
+  );
+}
+
+footer {
+  background-color: rgb(190, 180, 151);
+
+  text-align: center;
+  padding: 2em;
+  margin-top: 3em;
+}
