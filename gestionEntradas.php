@@ -8,7 +8,7 @@
     $servername = "eu-cdbr-west-03.cleardb.net";
     $user = "bf6b5c6b976cdc";
     $pass = "cdebb3b2";
-    $db = "entradas";
+    $db = "heroku_fa88a7d71d8316f";
 
     $conn = new mysqli($servername,$user,$pass,$db);
 

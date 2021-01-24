@@ -1,6 +1,6 @@
 <?php
 
-    $uri = "https://localhost/entradas";
+    $uri = "https://entradas.herokuapp.com/";
     $server = new SoapServer(null,array('uri'=>$uri));
     $server->addFunction("ultEntradas");
     $server->addFunction("categoriasUltEntradas");
