@@ -36,7 +36,7 @@
 
 <body>
     <header>
-        <a href="/entradas" class="logo">Entradas_</a>
+        <a href="/" class="logo">Entradas_</a>
     </header>
     <div class="formContainer">
         <form action="./publicarComentario.php?entradaID=<?=$_GET["entradaID"]?>" class="creacionForm" method="POST">

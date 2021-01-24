@@ -40,7 +40,7 @@
 
 <body>
     <header>
-        <a href="/entradas" class="logo">Entradas_</a>
+        <a href="/" class="logo">Entradas_</a>
     </header>
     <div class="formContainer">
         <div class="creacionForm">

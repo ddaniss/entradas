@@ -60,7 +60,7 @@
 
 <body>
     <header>
-        <a href="/entradas" class="logo">Entradas_</a>
+        <a href="/" class="logo">Entradas_</a>
     </header>
     <div class="formContainer">
         <form action="./entradaModificada.php?id=<?=$_GET["id"]?>" class="creacionForm" method="POST"

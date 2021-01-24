@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <a href="/entradas" class="logo">Entradas_</a>
+        <a href="/" class="logo">Entradas_</a>
     </header>
     <div class="formContainer">
         <form method="POST" class="loginForm" action="./validaUser.php">
