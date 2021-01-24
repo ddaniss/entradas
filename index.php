@@ -46,7 +46,7 @@
 
 <body>
     <header>
-        <a href="/entradas" class="logo">Entradas_</a>
+        <a href="/" class="logo">Entradas_</a>
         <ul class="nav">
             <li class="nav__item"><a href="/entradas?categoria=Politica">Política</a></li>
             <li class="nav__item"><a href="/entradas?categoria=Ciencia">Ciencia</a></li>
