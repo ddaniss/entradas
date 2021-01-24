@@ -51,8 +51,32 @@ label {
   margin-top: 2em;
 }
 
+input {
+  border: 2px solid #000;
+  border-radius: 3px;
+  background-color: #f8ecc9;
+  margin-top: 0.5rem;
+  padding: 1rem 0.5rem;
+}
+
 button {
   margin-top: 2em;
+  padding: 1rem 0rem;
+  width: 35%;
+  border: 2px solid #000;
+  border-radius: 3px;
+  background-color: #f8ecc9;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #797466;
+}
+
+button:active {
+  background-color: #474642;
 }
 
 footer {
