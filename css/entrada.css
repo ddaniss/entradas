@@ -193,3 +193,9 @@ footer {
   padding: 2em;
   margin-top: 3em;
 }
+
+@media (max-width: 1550px) {
+  main {
+    width: 90%;
+  }
+}

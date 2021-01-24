@@ -60,3 +60,9 @@ footer {
   text-align: center;
   padding: 2em;
 }
+
+@media (max-width: 1550px) {
+  form {
+    width: 90%;
+  }
+}
