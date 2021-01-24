@@ -5,9 +5,9 @@
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
 
-    $servername = "localhost";
-    $user = "pma";
-    $pass = "";
+    $servername = "eu-cdbr-west-03.cleardb.net";
+    $user = "bf6b5c6b976cdc";
+    $pass = "cdebb3b2";
     $db = "entradas";
 
     $conn = new mysqli($servername,$user,$pass,$db);

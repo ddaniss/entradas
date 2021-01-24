@@ -10,7 +10,7 @@
 
     function ultEntradas(){
         $arrayEntradas= array();
-        $conn = new mysqli("localhost","pma","","entradas");
+        $conn = new mysqli("eu-cdbr-west-03.cleardb.net","bf6b5c6b976cdc","cdebb3b2","entradas");
         $conn->set_charset("utf8");
         if($conn->connect_error) {
             echo "error";
@@ -26,7 +26,7 @@
     }
     function categoriasUltEntradas($cat){
         $arrayEntradas= array();
-        $conn = new mysqli("localhost","pma","","entradas");
+        $conn = new mysqli("eu-cdbr-west-03.cleardb.net","bf6b5c6b976cdc","cdebb3b2","entradas");
         $conn->set_charset("utf8");
         if($conn->connect_error) {
             echo "error";
@@ -45,7 +45,7 @@
         $arrFechas = explode(",",$fechas);
         
         $arrayEntradas= array();
-        $conn = new mysqli("localhost","pma","","entradas");
+        $conn = new mysqli("eu-cdbr-west-03.cleardb.net","bf6b5c6b976cdc","cdebb3b2","entradas");
         $conn->set_charset("utf8");
 
         if (count($arrFechas) > 1) {
@@ -76,7 +76,7 @@
         return $msg;
     }
     function eliminarEntradas($id){
-        $conn = new mysqli("localhost","pma","","entradas");
+        $conn = new mysqli("eu-cdbr-west-03.cleardb.net","bf6b5c6b976cdc","cdebb3b2","entradas");
         $conn->set_charset("utf8");
         
         if ($conn->connect_error) {
