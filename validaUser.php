@@ -10,7 +10,7 @@
     $pass = "cdebb3b2";
     $db = "heroku_fa88a7d71d8316f";
 
-    $conn = mysqli_connect($servername,$username,$password,$db) 
+    $conn = mysqli_connect($servername,$user,$pass,$db) 
         or die("Error " . mysqli_error($connection));
 
     $sql = 'SELECT * FROM usuario';
