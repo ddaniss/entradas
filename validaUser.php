@@ -30,18 +30,18 @@
     foreach ($userData as $key => $value) {
         if($_POST["user"]==$value["nombre"] && $_POST["pass"]==$value["pass"]) {
             if ($value["rol"]=="administrador") {
-            header("Location: /entradas/index.php?user=administrador");
+            header("Location: /index.php?user=administrador");
             $_SESSION["rol"] = "administrador";
             $_SESSION["id"] = $value["autor_id"];
             die();
             } else{ 
-                header("Location: /entradas/index.php?user=registrado");
+                header("Location: /index.php?user=registrado");
                 $_SESSION["rol"] = "registrado";
                 $_SESSION["id"] = $value["autor_id"];
                 die();
             }
     }
 } 
-    header("Location: /entradas/login.php?user=noExiste");
+    header("Location: /login.php?user=noExiste");
     $_SESSION["rol"] = "registrado";
 ?>
