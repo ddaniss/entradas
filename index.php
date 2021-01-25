@@ -48,21 +48,21 @@
     <header>
         <a href="/" class="logo">Entradas_</a>
         <ul class="nav">
-            <li class="nav__item"><a href="/entradas?categoria=Politica">Política</a></li>
-            <li class="nav__item"><a href="/entradas?categoria=Ciencia">Ciencia</a></li>
-            <li class="nav__item"><a href="/entradas?categoria=Ocio">Ocio</a></li>
-            <li class="nav__item"><a href="/entradas">Todas las entradas</a></li>
+            <li class="nav__item"><a href="/?categoria=Politica">Política</a></li>
+            <li class="nav__item"><a href="/?categoria=Ciencia">Ciencia</a></li>
+            <li class="nav__item"><a href="/?categoria=Ocio">Ocio</a></li>
+            <li class="nav__item"><a href="/">Todas las entradas</a></li>
         </ul>
 
         <div class="sesion">
             <?php if($_SESSION["rol"] === "administrador"): ?>
-            <a href="/entradas/gestionEntradas.php" class="loginLink">Gestionar Entradas</a>
-            <a href="/entradas/index.php?sesion=logout" class="loginLink loginCorto">Cerrar sesión </a>
+            <a href="/gestionEntradas.php" class="loginLink">Gestionar Entradas</a>
+            <a href="/index.php?sesion=logout" class="loginLink loginCorto">Cerrar sesión </a>
             <?php elseif($_SESSION["rol"] === "invitado"): ?>
-            <a href="/entradas/login.php" class="loginLink loginCorto1">Login</a>
+            <a href="/login.php" class="loginLink loginCorto1">Login</a>
             <?php elseif($_SESSION["rol"] === "registrado"): ?>
             <span>Bienvenido</span>
-            <a href="/entradas/index.php?sesion=logout" class="loginLink loginCorto">Cerrar sesión </a>
+            <a href="/index.php?sesion=logout" class="loginLink loginCorto">Cerrar sesión </a>
             <?php endif; ?>
         </div>
     </header>
